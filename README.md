@@ -1,30 +1,17 @@
-# React + TypeScript + Vite
+# Projeto aluguel de Carros 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao repositório do projeto Optimum! Optimum é um site apresentando informações sobre aluguel de carro e informações do veiculo. Este projeto utiliza React, TypeScript, Styled-components e outras tecnologias de ponta para criar uma aplicação robusta e elegante.
 
-Currently, two official plugins are available:
+## Ferramentas incluídas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **TypeScript**: Adiciona suporte para TypeScript ao projeto React.
+- **Styled Components**: Integra o Styled Components para estilização CSS-in-JS.
+- **ESLint**: Configura o ESLint com configurações recomendadas para React e TypeScript.
+- **Prettier**: Configura o Prettier para formatar automaticamente o código.
+- **EditorConfig**: Define convenções de formatação de código para vários editores de texto.
 
-## Expanding the ESLint configuration
+## Contribuindo
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Se você encontrar problemas ou tiver sugestões para melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+OBS: Projeto em Construção... 🛠️⚙️
