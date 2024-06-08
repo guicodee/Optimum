@@ -57,6 +57,7 @@ export const Content = styled.section`
     margin-top: 1rem;
     margin-bottom: 4rem;
     max-width: 38rem;
+    font-weight: 300;
   }
 
   a {

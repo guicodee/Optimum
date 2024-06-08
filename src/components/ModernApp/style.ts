@@ -44,6 +44,7 @@ export const TextContainer = styled.div`
     color: #A6AFBA;
     font-size: 1.25rem;
     margin-top: 1rem;
+    font-weight: 300;
   }
 
   @media screen and (max-width: 64rem) {
@@ -55,16 +56,6 @@ export const TextContainer = styled.div`
       font-size: 1rem;
     }
   }
-
-  /*
-  @media screen and (max-width: 42rem) {
-    flex-direction: column;
-    padding: 11rem 2.5rem 8rem 2.5rem;
-
-    img {
-      width: 0;
-    }
-  } */
 `;
 
 export const ButtonDownload = styled.a`
@@ -78,6 +69,7 @@ export const ButtonDownload = styled.a`
   border-radius: 75px;
   width: 206px;
   margin-top: 2rem;
+  font-weight: 500;
 
   @media screen and (max-width: 42rem) {
     margin-top: 3rem;
