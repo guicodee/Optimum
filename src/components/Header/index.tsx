@@ -1,4 +1,4 @@
-import Logo from '../../../public/logo.svg';
+import Logo from '/logo.svg';
 import { HeaderContainer, NavBar } from './styles';
 
 export function Header() {
