@@ -1,0 +1,58 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "name": "Porsche 718 Cayman S",
+      "category": "Coupe",
+      "capacity": 2,
+      "type": "Manual",
+      "price": "R$400",
+      "imageUrl": "/cars/car1.svg"
+    },
+    {
+      "id": 2,
+      "name": "Mini Cooper 5-DOOR",
+      "category": "Hatchback",
+      "capacity": 4,
+      "type": "Automático",
+      "price": "R$364",
+      "imageUrl": "/cars/car2.svg"
+    },
+    {
+      "id": 3,
+      "name": "Toyota GR Supra",
+      "category": "Coupe",
+      "capacity": 2,
+      "type": "Manual",
+      "price": "R$360",
+      "imageUrl": "/cars/car3.svg"
+    },
+    {
+      "id": 4,
+      "name": "Porsche 911 Turbo",
+      "category": "Coupe",
+      "capacity": 2,
+      "type": "Manual",
+      "price": "R$468",
+      "imageUrl": "/cars/car4.svg"
+    },
+    {
+      "id": 5,
+      "name": "Porsche Taycan 4S",
+      "category": "Coupe",
+      "capacity": 2,
+      "type": "Manual",
+      "price": "R$424",
+      "imageUrl": "/cars/car5.svg"
+    },
+    {
+      "id": 6,
+      "name": "Mini Cooper WORKS",
+      "category": "Hatchback",
+      "capacity": 4,
+      "type": "Manual",
+      "price": "R$369",
+      "imageUrl": "/cars/car6.svg"
+    }
+  ]
+}

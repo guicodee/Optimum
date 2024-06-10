@@ -1,31 +1,40 @@
-import Porsche from '/cars/car1.svg';
 import Person from '/people.svg';
 import Exchange from '/cambio.svg';
-import { Container, Description, Informations, CarInfo, CarPrice } from './styles';
+import { ICars } from '../../@types/cars';
+import { 
+  Container, 
+  Description, 
+  Informations, 
+  CarInfo, 
+  CarPrice, 
+  ImageCar 
+} from './styles';
 
-export function Cars() {
+export function Cars(props: ICars) {
+
+  const { capacity, category, imageUrl, name, price, type } = props;
 
   return (
     <Container>
       <Description>
-        <p>Porsche 718 Cayman S</p>
-        <small>Coupe</small>
+        <p>{name}</p>
+        <small>{category}</small>
       </Description>
-        <img src={Porsche} alt="Carro Porsche 718" />
+      <ImageCar src={imageUrl} alt="Carro Porsche 718" />
 
         <Informations>
           <CarInfo>
             <span>
               <img src={Person} alt="Icone de Pessoa" />
-              <p>2</p>
+              <p>{capacity}</p>
             </span>
             <span>
               <img src={Exchange} alt="Icone de câmbio" />
-              <p>Manual</p>
+              <p>{type}</p>
             </span>
           </CarInfo>
           <CarPrice>
-            <p>$400
+            <p>{price}
               <small>/d</small>
             </p>
           </CarPrice>

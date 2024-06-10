@@ -11,9 +11,9 @@ export const GlobalStyle = createGlobalStyle`
     background-color: #FAFAFA;
     color: #181818;
     overflow-x: hidden;
-  }
+  };
 
   body, input, button, textarea {
     font: 400 16px 'Roboto', sans-serif;
-  }
+  };
 `;

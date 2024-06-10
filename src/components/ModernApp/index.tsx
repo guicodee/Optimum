@@ -1,4 +1,9 @@
-import { Container, TextContainer, ButtonDownload, ImageApp } from './style';
+import { 
+  Container, 
+  TextContainer, 
+  ButtonDownload, 
+  ImageApp 
+} from './style';
 import App from '/app.svg';
 import ApppleIcon from '/apple-icon.svg';
 

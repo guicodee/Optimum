@@ -11,20 +11,25 @@ export const Container = styled.div`
 
   @media screen and (max-width: 72rem){
     width: 21rem;
-  }
+  };
 
   @media screen and (max-width: 48rem){
     width: 18rem;
-  }
+  };
 
   @media screen and (max-width: 42rem){
     width: 13rem;
-  }
+  };
 
   @media screen and (max-width: 32rem){
     width: 20rem;
     max-width: 100rem;
-  }
+  };
+`;
+
+export const ImageCar = styled.img`
+  margin: 2rem 0;
+  height: 100%;
 `;
 
 export const Description = styled.div`
@@ -36,13 +41,12 @@ export const Description = styled.div`
     color: ${({ theme }) => theme.colors.primary.main};
     font-size: 1rem;
     font-weight: 500;
-  }
+  };
 
   small {
     margin-top: 0.375rem;
     color: ${({ theme }) => theme.colors.primary.light};
-    font-size: 0.875rem;
-  }
+  };
 `;
 
 export const Informations = styled.div`
@@ -51,9 +55,11 @@ export const Informations = styled.div`
   justify-content: space-around;
   gap: 2rem;
 
-  @media screen and (max-width: 42rem){
-    gap: 0rem;
-  }
+  @media screen and (max-width: 42rem) and (min-width: 32rem) {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: baseline;
+  };
 `;
 
 export const CarInfo = styled.div`
@@ -63,7 +69,7 @@ export const CarInfo = styled.div`
 
   @media screen and (max-width: 42rem){
     gap: 1rem;
-  }
+  };
 
   span {
     display: flex;
@@ -74,8 +80,8 @@ export const CarInfo = styled.div`
       color: ${({ theme }) => theme.colors.primary.light};
       font-weight: 400;
       font-size: 0.875rem;
-    }
-  }
+    };
+  };
 `;
 
 export const CarPrice = styled.div`
@@ -84,14 +90,14 @@ export const CarPrice = styled.div`
   p {
     color: ${({ theme }) => theme.colors.primary.main};
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
 
     @media screen and (max-width: 42rem){
       font-size: 1rem;
-    }
-  }
+    };
+  };
 
   small {
     color: ${({ theme }) => theme.colors.primary.light};
-  }
+  };
 `;

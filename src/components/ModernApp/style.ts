@@ -10,12 +10,12 @@ export const Container = styled.section`
 
   @media screen and (max-width: 72rem) {
     gap: 4rem;
-  }
+  };
 
   @media screen and (max-width: 48rem) {
     flex-direction: column;
     padding: 5rem 2.5rem;
-  }
+  };
 `;
 
 export const ImageApp = styled.img`
@@ -23,11 +23,11 @@ export const ImageApp = styled.img`
 
   @media screen and (max-width: 64rem) {
     width: 260px;
-  }
+  };
 
   @media screen and (max-width: 48rem) {
     width: 280px;
-  }
+  };
 `;
 
 export const TextContainer = styled.div`
@@ -37,25 +37,25 @@ export const TextContainer = styled.div`
   h2 {
     font-size: 4rem;
     font-weight: 600;
-    color: #13171B;
-  }
+    color: ${({ theme }) => theme.colors.primary.dark};
+  };
 
   span {
-    color: #A6AFBA;
+    color: ${({ theme }) => theme.colors.primary.light};
     font-size: 1.25rem;
     margin-top: 1rem;
     font-weight: 300;
-  }
+  };
 
   @media screen and (max-width: 64rem) {
     h2 {
       font-size: 2rem;
-    }
+    };
 
     span {
       font-size: 1rem;
-    }
-  }
+    };
+  };
 `;
 
 export const ButtonDownload = styled.a`
@@ -63,15 +63,24 @@ export const ButtonDownload = styled.a`
   align-items: center;
   gap: 1rem;
   text-decoration: none;
-  background-color: #0A20E6;
+  background-color: ${({ theme }) => theme.colors.main};
   padding: 1.15rem 1.5rem;
   color: #fff;
   border-radius: 75px;
   width: 206px;
   margin-top: 2rem;
   font-weight: 500;
+  transition: background-color .2s linear;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.light};
+  }
+  
+  &:active{
+    background-color: ${({ theme }) => theme.colors.lighter};
+  }
 
   @media screen and (max-width: 42rem) {
     margin-top: 3rem;
-  }
+  };
 `;

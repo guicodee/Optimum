@@ -1,4 +1,7 @@
-import { Container, Content } from './style';
+import { 
+  Container, 
+  Content 
+} from './style';
 import Banner from '/banner.svg';
 
 export function Hero() {
