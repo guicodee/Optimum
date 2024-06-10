@@ -11,7 +11,6 @@ import {
 } from './styles';
 
 export function Cars(props: ICars) {
-
   const { capacity, category, imageUrl, name, price, type } = props;
 
   return (

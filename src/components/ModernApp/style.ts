@@ -66,7 +66,7 @@ export const ButtonDownload = styled.a`
   background-color: ${({ theme }) => theme.colors.main};
   padding: 1.15rem 1.5rem;
   color: #fff;
-  border-radius: 75px;
+  border-radius: 15px;
   width: 206px;
   margin-top: 2rem;
   font-weight: 500;

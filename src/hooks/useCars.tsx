@@ -20,5 +20,5 @@ export function useCars() {
     getCars()
   }, []);
 
-  return { carsModel, error }
+  return { carsModel, error };
 }

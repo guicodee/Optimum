@@ -1,4 +1,5 @@
 import { Cars } from "../../components/Cars";
+import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { Hero } from "../../components/Hero";
 import { MordernApp } from "../../components/ModernApp";
@@ -33,6 +34,7 @@ export function Home() {
           <h1>Erro ao buscar carros.</h1>
         </Container>
       )}
+      <Footer />
     </>
   )
 }

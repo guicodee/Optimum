@@ -22,10 +22,10 @@ export function Header() {
           Sobre nós
         </a>
         <a href="">
-          Carros
+          Catálogo
         </a>
         <a href="">
-          Contatos
+          Contato
         </a>
       </NavBar>
     </HeaderContainer>
