@@ -10,9 +10,10 @@ import {
   ImageCar ,
   DetailsCar
 } from './styles';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 export function Cars(props: ICars) {
+  const { id } = useParams();
   const { capacity, category, imageUrl, name, price, type } = props;
 
   return (
@@ -41,7 +42,7 @@ export function Cars(props: ICars) {
         </CarPrice>
       </Informations>
       <DetailsCar>
-        <Link to={'/'}>
+        <Link to={`/cars/${id}`}>
           Reserve agora
         </Link>
       </DetailsCar>

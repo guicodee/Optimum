@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { 
   Container, 
   Content 
@@ -11,9 +12,9 @@ export function Hero() {
       <Content>
         <h1>Transporte revolucionário ao seu alcance</h1>
         <p>Alugar um carro traz liberdade. Nós ajudamos você a encontrar o melhor carro pelo melhor preço.</p>
-        <a href="">
+        <Link to={'/cars'}>
           Ver catálogo
-        </a>
+        </Link>
       </Content>
       <img src={Banner} alt="" />
     </Container>

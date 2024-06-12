@@ -89,14 +89,21 @@ export const FormSupport = styled.form`
   input {
     width: 320px;
     height: 45px;
-    border: none;
+    border: 1px solid #dcdcdc;
     padding: 0 1rem;
+    background: #ededed;
+    border-radius: 4px;
+    color: ${({ theme }) => theme.colors.primary.dark};
 
     &::placeholder {
-      font-size: 0.875rem;
-      font-weight: 300;
+      font-size: 1rem;
+      font-weight: 400;
       text-transform: capitalize;
     };
+
+    &:focus {
+      background: ${({ theme }) => theme.colors.secondary};
+    }
   };
 
   button {

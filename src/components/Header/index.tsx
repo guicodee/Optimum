@@ -3,6 +3,7 @@ import {
   HeaderContainer, 
   NavBar 
 } from './styles';
+import { NavLink } from 'react-router-dom';
 
 export function Header() {
 
@@ -15,18 +16,18 @@ export function Header() {
       </div>
 
       <NavBar>
-        <a href="">
+        <NavLink to={'/'}>
           Home
-        </a>
-        <a href="">
+        </NavLink>
+        <NavLink to={'/sobre'}>
           Sobre nós
-        </a>
-        <a href="">
+        </NavLink>
+        <NavLink to={'/cars'}>
           Catálogo
-        </a>
-        <a href="">
+        </NavLink>
+        <NavLink to={'/contact'}>
           Contato
-        </a>
+        </NavLink>
       </NavBar>
     </HeaderContainer>
   )

@@ -3,15 +3,15 @@ import { Header } from "../../components/Header";
 import { useCars } from "../../hooks/useCars";
 import { ContainerCars, Container } from "./styles";
 
-export default function ModelCarId() {
-  const { carsModel } = useCars()
+export default function CatalogCars() {
+  const { carsModel } = useCars();
 
   return (
     <>
       <Header />
       <Container>
         <section>
-          <h1>Carros disponíveis em todo o Brasil</h1>
+          <h1>Carros disponíveis</h1>
           <h3>{carsModel.length} carros encontrados</h3>
         </section>
         <ContainerCars>

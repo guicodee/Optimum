@@ -15,8 +15,8 @@ export const NavBar = styled.nav`
 
   a {
     text-decoration: none;
-    color: ${({ theme }) => theme.colors.primary.main};
     gap: 1.25rem;
+    color: ${({ theme }) => theme.colors.primary.light};
     transition: color .2s linear;
 
     & + a {
@@ -24,11 +24,11 @@ export const NavBar = styled.nav`
     };
 
     &:hover {
-      color: ${({ theme }) => theme.colors.primary.dark};
-    }
-    
-    &:active{
       color: ${({ theme }) => theme.colors.primary.main};
+    }
+
+    &.active {
+      color: ${({ theme }) => theme.colors.main };
     }
   };
 `;

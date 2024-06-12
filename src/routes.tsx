@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import ModelCarId from "./pages/CatalogCars";
 import { Home } from "./pages/Home";
+import CatalogCars from "./pages/CatalogCars";
+import { ModelCar } from "./pages/ModelCar";
 
 export const router = createBrowserRouter([
   {
@@ -9,6 +10,10 @@ export const router = createBrowserRouter([
   },
   {
     path: "/cars",
-    element: <ModelCarId />,
+    element: <CatalogCars />,
+  },
+  {
+    path: "/cars/:id",
+    element: <ModelCar id={1} />,
   },
 ])
