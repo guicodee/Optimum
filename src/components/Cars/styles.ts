@@ -101,3 +101,30 @@ export const CarPrice = styled.div`
     color: ${({ theme }) => theme.colors.primary.light};
   };
 `;
+
+export const DetailsCar = styled.div`
+  margin-top: 2rem;
+
+  a {
+    text-decoration: none;
+    padding: 1rem 1rem;
+    background: ${({ theme }) => theme.colors.main};
+    color: white;
+    width: ${({ theme }) => theme.colors.primary.light};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    transition: background .2s linear;
+    font-weight: 300;
+    opacity: 0.9;
+
+    &:hover {
+      background: ${({ theme }) => theme.colors.lighter};
+    };
+
+    &:active {
+      background: ${({ theme }) => theme.colors.light};
+    };
+  };
+`;

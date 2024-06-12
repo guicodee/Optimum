@@ -14,11 +14,13 @@ export const Container = styled.div`
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 70px;
+    padding: 7rem 2.5rem 4rem;
   };  
 
   @media screen and (max-width: 42rem) {
     display: flex;
     flex-direction: column;
+    padding: 7rem 2.5rem 4rem;
   };
 `;
 
