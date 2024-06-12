@@ -26,6 +26,7 @@ export function Home() {
               category={car.category}
               price={car.price}
               type={car.type}
+              id={car.id}
             />
           ))}
         </Container>

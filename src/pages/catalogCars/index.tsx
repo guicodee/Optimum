@@ -17,13 +17,14 @@ export default function CatalogCars() {
         <ContainerCars>
           {carsModel.map((car) => (
             <Cars
-            key={car.id}
-            name={car.name}
-            imageUrl={car.imageUrl}
-            capacity={car.capacity}
-            category={car.category}
-            price={car.price}
-            type={car.type}
+              key={car.id}
+              name={car.name}
+              imageUrl={car.imageUrl}
+              capacity={car.capacity}
+              category={car.category}
+              price={car.price}
+              type={car.type}
+              id={car.id}
             />
             ))}
         </ContainerCars>

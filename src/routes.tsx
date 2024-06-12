@@ -7,13 +7,13 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-  },
+    },
   {
     path: "/cars",
     element: <CatalogCars />,
-  },
-  {
-    path: "/cars/:id",
-    element: <ModelCar id={1} />,
-  },
+    },
+    {
+      path: "/car/:id",
+      element: <ModelCar />, 
+    },
 ])
