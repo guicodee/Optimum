@@ -1,12 +1,10 @@
 import { FormEvent, useState } from 'react';
 import { 
   Company,
-  // ButtonDownload,
   Container, 
   FormSupport, 
   Info 
 } from './styles';
-// import ApppleIcon from '/apple-icon.svg';
 
 export function Footer() {
   const [value, setValue] = useState('');
@@ -15,13 +13,6 @@ export function Footer() {
     event.preventDefault();
     setValue('');
   }
-
-
-  /* <ButtonDownload href="">
-    <img src={ApppleIcon} width={25} alt="" />
-      Faça download
-    </ButtonDownload>
-    */
 
   return (
     <Container>

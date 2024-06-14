@@ -4,8 +4,7 @@ import { Header } from "../../components/Header";
 import { Hero } from "../../components/Hero";
 import { MordernApp } from "../../components/ModernApp";
 import { useCars } from "../../hooks/useCars";
-import { Container } from "../../styles/styles";
-
+import { Container } from "./styles";
 
 export function Home() {
   const { carsModel, error } = useCars();

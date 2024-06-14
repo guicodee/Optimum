@@ -11,37 +11,37 @@ import {
 } from "./styles";
 import { Header } from "../../components/Header";
 
-export function ModelCar() {
+export function SingleCarModel() {
   const { id } = useParams();
   const { carsModel } = useCars();
 
-  const carItem = carsModel.find((car) => car.id === id);
+  const singleCar = carsModel.find((car) => car.id === id);
 
   return (
     <>
       <Header />
       <Container>
         <ModelCarContainer>
-          <img src={carItem?.imageUrl} alt="" />
+          <img src={singleCar?.imageUrl} alt="" />
         </ModelCarContainer>
         <ContentContainer>
           <div>
-            <h1>{carItem?.name}</h1>
-            <small>{carItem?.category}</small>
+            <h1>{singleCar?.name}</h1>
+            <small>{singleCar?.category}</small>
           </div>
-          <p>{carItem?.description}</p>
+          <p>{singleCar?.description}</p>
           <VehicleInfo>
             <span>
               <img src={Person} alt="Icone de Pessoa" />
-              {carItem?.capacity}
+              {singleCar?.capacity}
             </span>
             <span>
             <img src={Exchange} alt="Icone de câmbio" />
-              {carItem?.type}
+              {singleCar?.type}
             </span>
           </VehicleInfo>
           <VehiclePrice>
-            <h3>{carItem?.price}<span>/d</span></h3>
+            <h3>{singleCar?.price}<span>/d</span></h3>
             <a href="">
               Alugar veículo
             </a>

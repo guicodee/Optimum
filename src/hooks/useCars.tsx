@@ -17,7 +17,7 @@ export function useCars(id?: number) {
       }
     }
 
-    getCars()
+    getCars();
   }, [id]);
 
   return { carsModel, error };
