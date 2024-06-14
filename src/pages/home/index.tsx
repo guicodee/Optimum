@@ -2,6 +2,7 @@ import { Cars } from "../../components/Cars";
 import { Header } from "../../components/Header";
 import { Hero } from "../../components/Hero";
 import { MordernApp } from "../../components/ModernApp";
+import { Testimonies } from "../../components/Testimonies";
 import { useCars } from "../../hooks/useCars";
 import { Container } from "./styles";
 
@@ -12,6 +13,7 @@ export function Home() {
     <>
       <Header />
       <Hero />
+      <Testimonies />
       <MordernApp />
       {carsModel.length >= 1 && !error ? (
         <Container>

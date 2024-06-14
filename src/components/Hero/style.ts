@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.main`
   max-width: 80rem;
   margin: 0 auto;
-  padding: 11rem 2.5rem;
+  padding: 8rem 2.5rem;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -18,13 +18,13 @@ export const Container = styled.main`
   @media screen and (max-width: 72rem) {
     img {
       right: 36px;
-      width: 350px;
+      width: 50vw;
     };
   };
 
   @media screen and (max-width: 64rem) {
     flex-direction: column;
-    padding: 11rem 2.5rem 8rem 2.5rem;
+    padding: 6rem 2.5rem 8rem 2.5rem;
 
     img {
       position: relative;
@@ -44,6 +44,10 @@ export const Container = styled.main`
 
 export const Content = styled.section`
   max-width: 42rem;
+
+  @media screen and (max-width: 72rem) {
+    max-width: max-content;
+  };
 
   h1 {
     font-size: 3.5rem;
