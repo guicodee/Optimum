@@ -6,4 +6,5 @@ export interface ICars {
   type: string;
   price: string;
   imageUrl: string;
+  description?: string;
 }

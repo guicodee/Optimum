@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ICars } from "../@types/cars";
+import { ICars } from "../types/cars";
 import { api } from "../service/api";
 
 export function useCars(id?: number) {
@@ -9,8 +9,8 @@ export function useCars(id?: number) {
   useEffect(() => {
     async function getCars() {
       try {
-        const data = await api(id)
-        setCarsModel(data)
+        const data = await api(id);
+        setCarsModel(data);
       } catch (error) {
         setError('Erro ao buscar os carros:')
         console.log('Erro ao buscar os carros:', error);

@@ -1,6 +1,6 @@
 import Person from '/people.svg';
 import Exchange from '/cambio.svg';
-import { ICars } from '../../@types/cars';
+import { ICars } from '../../types/cars';
 import { 
   Container, 
   Description, 
