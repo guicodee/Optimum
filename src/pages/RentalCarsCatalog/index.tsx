@@ -4,16 +4,24 @@ import { useCars } from "../../hooks/useCars";
 import { ContainerCars, Container } from "./styles";
 
 export default function RentalCarsCatalog() {
-  const { carsModel } = useCars();
+  const { carsModel, error } = useCars();
 
   return (
     <>
       <Header />
       <Container>
-        <section>
-          <h1>Carros disponíveis</h1>
-          <h3>{carsModel.length} carros encontrados</h3>
-        </section>
+        {error ? (
+          <section>
+            <h1>Carros disponíveis</h1>
+            <h3>Erro ao listar veículos</h3>
+          </section>
+        ) : (
+          <section>
+            <h1>Carros disponíveis</h1>
+            <h3>{carsModel.length} carros encontrados</h3>
+          </section>
+        )}
+        
         <ContainerCars>
           {carsModel.map((car) => (
             <Cars

@@ -16,19 +16,19 @@ export const NavBar = styled.nav`
   a {
     text-decoration: none;
     gap: 1.25rem;
-    color: ${({ theme }) => theme.colors.primary.light};
+    color: ${({ theme }) => theme.colors.secondary};
     transition: color .2s linear;
+    background: ${({ theme }) => theme.colors.main};
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    transition: .2s linear;
 
     & + a {
       margin-left: 2rem;
     };
 
     &:hover {
-      color: ${({ theme }) => theme.colors.primary.main};
-    }
-
-    &.active {
-      color: ${({ theme }) => theme.colors.main };
+      background: ${({ theme }) => theme.colors.light};
     }
   };
 `;

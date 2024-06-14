@@ -16,17 +16,8 @@ export function Header() {
       </div>
 
       <NavBar>
-        <NavLink to={'/'}>
-          Home
-        </NavLink>
-        <NavLink to={'/sobre'}>
-          Sobre nós
-        </NavLink>
-        <NavLink to={'/cars'}>
-          Catálogo
-        </NavLink>
-        <NavLink to={'/contact'}>
-          Contato
+        <NavLink to={'/entrar'}>
+          Entrar
         </NavLink>
       </NavBar>
     </HeaderContainer>

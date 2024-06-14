@@ -36,7 +36,7 @@ export const TextContainer = styled.div`
 
   h2 {
     font-size: 4rem;
-    font-weight: 600;
+    font-weight: 500;
     color: ${({ theme }) => theme.colors.primary.dark};
   };
 

@@ -21,7 +21,7 @@ export function Cars(props: ICars) {
         <p>{name}</p>
         <small>{category}</small>
       </Description>
-      <ImageCar src={imageUrl} alt="Carro Porsche 718" />
+      <ImageCar src={imageUrl} alt={name} />
 
       <Informations>
         <CarInfo>

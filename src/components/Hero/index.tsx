@@ -16,7 +16,7 @@ export function Hero() {
           Ver catálogo
         </Link>
       </Content>
-      <img src={Banner} alt="" />
+      <img src={Banner} alt="Veículo automotivo pessoal prata" />
     </Container>
   )
 }
