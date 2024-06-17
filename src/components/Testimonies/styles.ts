@@ -18,8 +18,12 @@ export const ContainerTestemonie = styled.article`
   width: 50%;
   padding: 48px 32px;
   border-radius: 6px;
-  background: ${({ theme }) => theme.colors.primary.dark};
+  background: ${({ theme }) => theme.colors.lighter};
   color: ${({ theme }) => theme.colors.secondary};
+  border: 1px solid ${({ theme }) => theme.colors.light};
+  -webkit-box-shadow: -9px 11px 49px -16px rgba(0,0,0,0.43);
+  -moz-box-shadow: -9px 11px 49px -16px rgba(0,0,0,0.43);
+  box-shadow: -9px 11px 49px -16px rgba(0,0,0,0.43);
 
   p {
     font-size: 1.15rem;

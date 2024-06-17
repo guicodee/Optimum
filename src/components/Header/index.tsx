@@ -11,12 +11,12 @@ export function Header() {
     <HeaderContainer>
       <div>
         <a href='/'>
-          <img src={Logo} alt="CarStore Logo" />
+          <img src={Logo} alt="Optimum Logo" />
         </a>
       </div>
 
       <NavBar>
-        <NavLink to={'/entrar'}>
+        <NavLink to={'/sign-in'}>
           Entrar
         </NavLink>
       </NavBar>

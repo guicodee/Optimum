@@ -3,7 +3,7 @@ import { Header } from "../../components/Header";
 import { useCars } from "../../hooks/useCars";
 import { ContainerCars, Container } from "./styles";
 
-export default function RentalCarsCatalog() {
+export function RentalCarsCatalog() {
   const { carsModel, error } = useCars();
 
   return (
