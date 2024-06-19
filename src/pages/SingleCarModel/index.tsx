@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Person from '/people.svg';
 import Exchange from '/cambio.svg';
 import { useCars } from "../../hooks/useCars";
@@ -42,9 +42,9 @@ export function SingleCarModel() {
           </VehicleInfo>
           <VehiclePrice>
             <h3>{singleCar?.price}<span>/d</span></h3>
-            <a href="">
+            <Link to={`/car/${singleCar?.id}/sucess`}>
               Alugar veículo
-            </a>
+            </Link>
           </VehiclePrice>
         </ContentContainer>
       </Container>
