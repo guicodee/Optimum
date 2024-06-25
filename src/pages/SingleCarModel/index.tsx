@@ -10,6 +10,7 @@ import {
   VehiclePrice
 } from "./styles";
 import { Header } from "../../components/Header";
+import { Helmet } from "react-helmet";
 
 export function SingleCarModel() {
   const { id } = useParams();
@@ -19,6 +20,7 @@ export function SingleCarModel() {
 
   return (
     <>
+      <Helmet title="Veículo" />
       <Header />
       <Container>
         <ModelCarContainer>

@@ -5,6 +5,7 @@ import { Container, DetailedInformation, PrintDocument, VehicleRented } from "./
 import CheckCircle from '/checkcircle.svg';
 import { faker } from '../../utils/faker';
 import { differenceInDays, format } from "date-fns";
+import { Helmet } from "react-helmet";
 
 export function VehicleSucess() {
   const { id } = useParams();
@@ -29,6 +30,7 @@ export function VehicleSucess() {
 
   return (
     <>
+      <Helmet title="Veículo alugado com sucesso" />
       <Header />
       <Container>
         <VehicleRented>

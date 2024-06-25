@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { Cars } from "../../components/Cars";
 import { Header } from "../../components/Header";
 import { useCars } from "../../hooks/useCars";
@@ -8,6 +9,7 @@ export function RentalCarsCatalog() {
 
   return (
     <>
+      <Helmet title="Optimum Aluga | Catálogo de carros" />
       <Header />
       <Container>
         {error ? (

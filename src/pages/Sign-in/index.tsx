@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { 
   Container, 
   ContainerForm, 
@@ -6,25 +7,28 @@ import {
 
 export function SignIn() {
   return (
-    <Container>
-      <ContainerForm>
-        <ContentForm>
-          <h1>Acesse sua conta</h1>
-          <form>
-            <div>
+    <>
+      <Helmet title="Optimum Aluga | Entrar" />
+      <Container>
+        <ContainerForm>
+          <ContentForm>
+            <h1>Acesse sua conta</h1>
+            <form>
               <div>
-                <label htmlFor="">Seu e-mail</label>
-                <input type="text" />
+                <div>
+                  <label htmlFor="">Seu e-mail</label>
+                  <input type="text" placeholder="Digite seu e-mail" />
+                </div>
+                <div>
+                  <label htmlFor="">Sua senha</label>
+                  <input type="password" placeholder="Digite sua senha" />
+                </div>
               </div>
-              <div>
-                <label htmlFor="">Sua senha</label>
-                <input type="password" />
-              </div>
-            </div>
-            <button type="submit">Acessar</button>
-          </form>
-        </ContentForm>
-      </ContainerForm>
-    </Container>
+              <button type="submit">Acessar</button>
+            </form>
+          </ContentForm>
+        </ContainerForm>
+      </Container>
+    </>
   )
 }

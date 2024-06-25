@@ -5,12 +5,14 @@ import { MordernApp } from "../../components/ModernApp";
 import { Testimonies } from "../../components/Testimonies";
 import { useCars } from "../../hooks/useCars";
 import { Container } from "./styles";
+import { Helmet } from "react-helmet";
 
 export function Home() {
   const { carsModel, error } = useCars();
 
   return (
     <>
+      <Helmet title="Optimum Aluga | Página inicial" />
       <Header />
       <Hero />
       <Testimonies />
