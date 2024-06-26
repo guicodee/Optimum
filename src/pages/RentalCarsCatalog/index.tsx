@@ -3,6 +3,7 @@ import { Cars } from "../../components/Cars";
 import { Header } from "../../components/Header";
 import { useCars } from "../../hooks/useCars";
 import { ContainerCars, Container } from "./styles";
+import { FilterCars } from "../../components/FilterCars";
 
 export function RentalCarsCatalog() {
   const { carsModel, error } = useCars();
@@ -23,6 +24,8 @@ export function RentalCarsCatalog() {
             <h3>{carsModel.length} carros encontrados</h3>
           </section>
         )}
+
+        <FilterCars />
         
         <ContainerCars>
           {carsModel.map((car) => (
