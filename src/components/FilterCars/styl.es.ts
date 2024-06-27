@@ -15,8 +15,15 @@ export const FormContainer = styled.form`
     height: 100%;
     border-radius: 8px;
     border: none;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 48rem){
+      flex-direction: column;
+      align-items: normal;
+      gap: 3rem;
+    }
   }
 
   button {
@@ -32,6 +39,10 @@ export const FormContainer = styled.form`
 
     &:hover {
       background-color: ${({ theme }) => theme.colors.main};
+    }
+
+    @media screen and (max-width: 898px) {
+      width: 100%;
     }
   }
 `;

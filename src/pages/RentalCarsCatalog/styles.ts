@@ -39,6 +39,6 @@ export const ContainerCars = styled.div`
   @media screen and (max-width: 32rem){
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 1rem;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
   };
 `;
