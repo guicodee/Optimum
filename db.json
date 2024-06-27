@@ -1,0 +1,70 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "name": "Porsche 718 Cayman S",
+      "category": "Coupe",
+      "capacity": 2,
+      "type": "Automático",
+      "price": "R$ 1.460,00",
+      "imageUrl": "/cars/car1.svg",
+      "color": "Preto",
+      "description": "É um esportivo de alta performance, caracterizado por seu design elegante e engenharia precisa. Oferece uma experiência de condução envolvente e emocionante."
+    },
+    {
+      "id": 2,
+      "name": "Mini Cooper 5-DOOR",
+      "category": "Hatchback",
+      "capacity": 4,
+      "type": "Manual",
+      "price": "R$ 804,00",
+      "imageUrl": "/cars/car2.svg",
+      "color": "Azul",
+      "description": "Combina o charme icônico do Mini com maior praticidade e espaço. Um interior espaçoso, este modelo proporciona conforto e conveniência sem sacrificar o estilo clássico e a personalidade vibrante que tornam o Mini tão especial."
+    },
+    {
+      "id": 3,
+      "name": "Toyota GR Supra",
+      "category": "Coupe",
+      "capacity": 2,
+      "type": "Manual",
+      "price": "R$ 1.679,00",
+      "imageUrl": "/cars/car3.svg",
+      "color": "vermelho",
+      "description": "É um esportivo icônico, renascido com design arrojado e performance emocionante. Com uma distribuição de peso perfeita e dinâmica de condução refinada, o GR Supra oferece uma experiência de condução pura e envolvente."
+    },
+    {
+      "id": 4,
+      "name": "Porsche 911 Turbo",
+      "category": "Coupe",
+      "capacity": 2,
+      "type": "Automático",
+      "price": "R$ 1.990,00",
+      "imageUrl": "/cars/car4.svg",
+      "color": "Preto",
+      "description": "É um ícone de engenharia e design, combinando linhas clássicas com uma postura agressiva. Oferece uma experiência de condução incomparável, mesclando luxo e performance."
+    },
+    {
+      "id": 5,
+      "name": "Porsche Taycan 4S",
+      "category": "Coupe",
+      "capacity": 4,
+      "type": "Automático",
+      "price": "R$ 2.349,00",
+      "imageUrl": "/cars/car5.svg",
+      "color": "Azul",
+      "description": "Modelo de carro elétrico de alta performance da Porsche. É uma das variantes que combinam a tradição de engenharia de performance da Porsche com a inovação dos veículos elétricos."
+    },
+    {
+      "id": 6,
+      "name": "Mini Cooper WORKS",
+      "category": "Hatchback",
+      "capacity": 4,
+      "type": "Manual",
+      "price": "R$ 1.129,00",
+      "imageUrl": "/cars/car6.svg",
+      "color": "Preto",
+      "description": "É um modelo de alto desempenho da linha Mini. Conhecido por sua combinação de design icônico, manuseio ágil e potência impressionante."
+    }
+  ]
+}

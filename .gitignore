@@ -22,7 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Ignorar arquivos específicos adicionados por você
-db.json
-src/service/api.ts
